@@ -63,8 +63,12 @@ In the root of the project:
 
 - Paste default domain of the Function App into the my-app > .env_example and rename the file to .env
 
+
+
 Run the command:
 
 ```bash
+npm run build
+cd dist
 az login
-func azure <name_app> publish <name_function_resource_created>
+az webapp up -n <name_app> -g <resource_name> --html
