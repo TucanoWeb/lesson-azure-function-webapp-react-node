@@ -1,0 +1,7 @@
+#ignore all files .env
+.env
+dist
+node_modules
+dist
+.vscode
+local.settings.json_bkp
